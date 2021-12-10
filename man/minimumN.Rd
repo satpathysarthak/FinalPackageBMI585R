@@ -9,7 +9,7 @@ minimumN(d, power = 0.8)
 \arguments{
 \item{d}{true difference in means}
 
-\item{power}{power of test (1 minus Type II error probability), default 0.9}
+\item{power}{power of test (1 minus Type II error probability), default 0.8}
 }
 \value{
 number of observations (per group)

@@ -18,5 +18,5 @@ Implement a chi-squared test that takes a dataset with 2 columns of categorical 
 \examples{
 data = tibble::read_csv('https://jlucasmckay.bmi.emory.edu/global/bmi585/demographics.csv')
 data = subset(data, select = c('sex','group'))
-chi_sq(data)
+chiSquareCounts(data)
 }

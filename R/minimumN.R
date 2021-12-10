@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @param d true difference in means
-#' @param power power of test (1 minus Type II error probability), default 0.9
+#' @param power power of test (1 minus Type II error probability), default 0.8
 #' @return number of observations (per group)
 
 #'
