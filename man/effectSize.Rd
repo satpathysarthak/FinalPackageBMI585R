@@ -18,5 +18,8 @@ a numeric value for effect-size or Cohen's d
 One very useful measure of effect size is Cohen’s d. This is the difference in means between two groups divided by some measure of the standard deviation. Effect sizes are one of the most common parameters used in power analysis.
 }
 \examples{
-effectSize()
+set.seed(24)
+x = c(rnorm(50,mean=10,sd=2),rnorm(50,mean=3,sd=6))
+g = c(rep('M',50),rep('F',50))
+effectSize(x,g)
 }

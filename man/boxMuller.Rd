@@ -16,5 +16,6 @@ a vector of \code{n} samples
 Creates samples from the standard normal distribution using Box Muller Transformation
 }
 \examples{
-boxMuller(500)
+set.seed(1223)
+test = boxMuller(500)
 }

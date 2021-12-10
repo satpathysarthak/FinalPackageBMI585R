@@ -9,7 +9,10 @@
 #' @param pred a (non-empty) numeric vector of predicted values of the dependent variable in regression.
 #' @return
 #' @examples
-#'
+#' model = lm(Sepal.Width ~ Sepal.Length+Petal.Length, data = iris)
+#' truth = iris$Sepal.Width
+#' pred = model$fitted.values
+#' r2(pred,truth)
 r2 = function(pred,truth){
   Residuals = truth - (pred)
   RSS = norm(Residuals, type = "2")^2

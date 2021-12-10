@@ -18,5 +18,8 @@ r2(pred, truth)
 R-squared is the fraction of variance explained by the model. It gives you an idea of how many data points fall within the line of the regression equation.
 }
 \examples{
-
+model = lm(Sepal.Width ~ Sepal.Length+Petal.Length, data = iris)
+truth = iris$Sepal.Width
+pred = model$fitted.values
+r2(pred,truth)
 }

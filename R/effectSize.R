@@ -10,10 +10,14 @@
 #' @param g An atomic vector of strings or factors (categorical data)
 #' @return a numeric value for effect-size or Cohen's d
 #' @examples
-#' effectSize()
+#' set.seed(24)
+#' x = c(rnorm(50,mean=10,sd=2),rnorm(50,mean=3,sd=6))
+#' g = c(rep('M',50),rep('F',50))
+#' effectSize(x,g)
 effectSize = function(x,g){
   input <- tibble::tibble(x,g)
+  #g = as.factor(g)
   int <- input %>% dplyr::group_by(g) %>% dplyr::summarize(mean= mean(x, na.rm = TRUE))
-  out <- (int[int$g==0,]$mean - int[int$g==1,]$mean)/sd(input$x)
+  out <- (int[int$g==unique(g)[1],]$mean - int[int$g==unique(g)[2],]$mean)/sd(input$x)
   return(out)
 }

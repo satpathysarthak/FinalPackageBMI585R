@@ -10,7 +10,7 @@
 #' @examples
 #' data = tibble::read_csv('https://jlucasmckay.bmi.emory.edu/global/bmi585/demographics.csv')
 #' data = subset(data, select = c('sex','group'))
-#' chi_sq(data)
+#' chiSquareCounts(data)
 
 chiSquareCounts <- function(tib){
   a = table(tib[[1]],tib[[2]])

@@ -4,12 +4,12 @@
 \alias{minimumN}
 \title{Minimum sample size mapped from effect size (Cohen's d)}
 \usage{
-minimumN(d, power = 0.9)
+minimumN(d, power = 0.8)
 }
 \arguments{
 \item{d}{true difference in means}
 
-\item{power}{power of test (1 minus Type II error probability)}
+\item{power}{power of test (1 minus Type II error probability), default 0.9}
 }
 \value{
 number of observations (per group)
@@ -18,7 +18,7 @@ number of observations (per group)
 A wrapper function around power.t.test that maps effect size (Cohen's d) to minimum sample size with the default power of 0.9.
 }
 \details{
-User's can change the power from 0.9.
+User's can change the power from 0.8.
 }
 \examples{
 minimumN(d = 1)

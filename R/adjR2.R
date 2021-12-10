@@ -10,7 +10,10 @@
 #' @param d number of independent variables in the regression model. Default value is 1
 #' @return
 #' @examples
-#'
+#' model = lm(Sepal.Width ~ Sepal.Length+Petal.Length, data = iris)
+#' truth = iris$Sepal.Width
+#' pred = model$fitted.values
+#' adjR2(pred,truth)
 adjR2 = function(pred,truth,d=1){
   Residuals = truth - (pred)
   RSS = norm(Residuals, type = "2")^2
@@ -19,5 +22,5 @@ adjR2 = function(pred,truth,d=1){
   n = length(truth)
   num = RSS/(n-d-1)
   den = TSS/(n-1)
-  return(1-RSS/TSS)
+  return(1-num/den)
 }

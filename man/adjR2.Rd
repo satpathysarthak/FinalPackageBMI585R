@@ -20,5 +20,8 @@ adjR2(pred, truth, d = 1)
 Adjusted R-squared is the fraction of variance explained by the model, similar to R-suared. It also penalizes for the number of independent variables in the regression model.
 }
 \examples{
-
+model = lm(Sepal.Width ~ Sepal.Length+Petal.Length, data = iris)
+truth = iris$Sepal.Width
+pred = model$fitted.values
+adjR2(pred,truth)
 }
