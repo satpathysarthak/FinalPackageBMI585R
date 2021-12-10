@@ -1,6 +1,6 @@
 #' Minimum sample size mapped from effect size (Cohen's d)
 #'
-#' A wrapper function around power.t.test that maps effect size (Cohen's d) to minimum sample size with the default power of 0.9.
+#' A wrapper function around power.t.test that maps effect size (Cohen's d) to minimum sample size with the default power of 0.8.
 #'
 #' User's can change the power from 0.8.
 #' @export

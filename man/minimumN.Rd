@@ -15,7 +15,7 @@ minimumN(d, power = 0.8)
 number of observations (per group)
 }
 \description{
-A wrapper function around power.t.test that maps effect size (Cohen's d) to minimum sample size with the default power of 0.9.
+A wrapper function around power.t.test that maps effect size (Cohen's d) to minimum sample size with the default power of 0.8.
 }
 \details{
 User's can change the power from 0.8.
