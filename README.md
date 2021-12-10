@@ -24,9 +24,9 @@ install.packages('tidyvers3')
 
 ### Important Directories
 
- The directory that stores the documentation for functions in [R](R) directory. It is generated from Roxygen.
+[man](man) The directory that stores the documentation for functions in [R](R) directory. It is generated from Roxygen.
 
-Tnhe directory that stores the functions
+[R](R) The directory that stores the functions
 
 
 ## Functions and their usage
